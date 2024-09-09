@@ -1,0 +1,65 @@
+Entidades:
+Users:
+
+userId (PK)
+name
+email
+password
+createdAt
+updatedAt
+
+Products:
+
+productId (PK)
+name
+description
+price
+stock
+categoryId (FK a Categories)
+createdAt
+updatedAt
+
+Categories:
+
+categoryId (PK)
+name
+description
+
+Orders:
+
+orderId (PK)
+userId (FK a Users)
+totalAmount
+status
+createdAt
+updatedAt
+
+OrderItems:
+
+orderItemId (PK)
+orderId (FK a Orders)
+productId (FK a Products)
+quantity
+price
+
+ShoppingCarts:
+
+cartId (PK)
+userId (FK a Users)
+createdAt
+
+CartItems:
+
+cartItemId (PK)
+cartId (FK a ShoppingCarts)
+productId (FK a Products)
+quantity
+
+Payments:
+
+paymentId (PK)
+orderId (FK a Orders)
+amount
+status
+paymentMethod
+createdAt
