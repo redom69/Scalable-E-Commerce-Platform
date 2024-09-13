@@ -10,6 +10,7 @@ Notification Service: Sends email and SMS notifications for various events (e.g.
 Additional Components:
 In addition to the core microservices, you can include the following components to enhance the scalability, reliability, and manageability of your e-commerce platform:
 
+
 API Gateway: Serves as the entry point for all client requests, routing them to the appropriate microservice. It might be worth looking into Kong, Traefik, or NGINX for this purpose.
 Service Discovery: Automatically detects and manages service instances. You can use Consul or Eureka for service discovery.
 Centralized Logging: Aggregates logs from all microservices for easy monitoring and debugging. You can use the ELK stack (Elasticsearch, Logstash, Kibana) for this purpose.

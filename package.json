@@ -1,7 +1,16 @@
 {
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
   "dependencies": {
     "@nestjs/typeorm": "^10.0.2",
+    "express": "^4.21.0",
     "pg": "^8.12.0",
+    "prettier": "^3.3.3",
     "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }

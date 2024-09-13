@@ -1,1 +1,7 @@
-/node_modules
+# Ignora node_modules
+node_modules/
+
+# Ignora archivos de entorno
+.env
+.env.development
+.env.production
